@@ -7,7 +7,17 @@ const PORT = process.env.PORT || 8000;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// Sirf main.html serve karein
+// --- Pair.js ko safely load karein ---
+try {
+    const pairRouter = require('./pair');
+    app.use('/pair', pairRouter);
+    app.use('/code', pairRouter);
+    console.log("✅ pair.js loaded successfully");
+} catch (err) {
+    console.error("❌ pair.js load nahi hua:", err.message);
+}
+
+// --- Main page ---
 app.use('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'main.html'));
 });
