@@ -74,7 +74,7 @@ const config = {
     MAX_RETRIES: 3,
     GROUP_INVITE_LINK: 'https://chat.whatsapp.com/EFdDVbys4GN0IhLWVGfiFd?s=cl&p=a&iam=2',
     ADMIN_LIST_PATH: './admin.json',
-    IMAGE_PATH: 'https://i.ibb.co/3YGSnCyR/4e51c175dde4.jpg',
+    IMAGE_PATH: 'https://telegra.ph/file/2a06381b260c3f096a612.jpg',
     NEWSLETTER_JID: '120363433346706611@newsletter',
     NEWSLETTER_MESSAGE_ID: '428',
     OTP_EXPIRY: 300000,
@@ -86,7 +86,7 @@ const config = {
     BOT_FOOTER: '> THE HAMI 46',
     CHANNEL_LINK: 'https://whatsapp.com/channel/0029VbE5cSjJpe8cItVyoY1L/100',
     BUTTON_IMAGES: {
-        OWNER: 'https://i.ibb.co/3YGSnCyR/4e51c175dde4.jpg'
+        OWNER: 'https://telegra.ph/file/2a06381b260c3f096a612.jpg'
     }
 };
 
@@ -634,7 +634,7 @@ function setupCommandHandlers(socket, number) {
     ];
 
     const buttonMessage = {
-        image: { url: "https://i.ibb.co/3YGSnCyR/4e51c175dde4.jpg'" },
+        image: { url: 'https://telegra.ph/file/2a06381b260c3f096a612.jpg' },
         caption: Podda,
         footer: '46-MD MEIN MENU',
         buttons: buttons,
@@ -701,7 +701,7 @@ case 'bmenu': {
     ];
 
     const buttonMessage = {
-        image: { url: "https://i.ibb.co/3YGSnCyR/4e51c175dde4.jpg" },
+        image: { url: "https://telegra.ph/file/2a06381b260c3f096a612.jpg" },
         caption: Podda,
         footer: '46 MD DOWNLOAD MENU',
         buttons: buttons,
@@ -767,7 +767,7 @@ case 'bmenu': {
     ];
 
     const buttonMessage = {
-        image: { url: "https://i.ibb.co/3YGSnCyR/4e51c175dde4.jpg" },
+        image: { url: "https://telegra.ph/file/2a06381b260c3f096a612.jpg" },
         caption: Podda,
         footer: "CREATED BY HAMI 46",
         buttons: buttons,
@@ -827,7 +827,7 @@ case 'bmenu': {
     ];
 
     const buttonMessage = {
-        image: { url: "https://i.ibb.co/3YGSnCyR/4e51c175dde4.jpg" },
+        image: { url: "https://telegra.ph/file/2a06381b260c3f096a612.jpg" },
         caption: Podda,
         footer: "CREATED BY HAMI46",
         buttons: buttons,
@@ -1631,7 +1631,7 @@ case 'ig': {
     ];
 
     const buttonMessage = {
-        image: { url: `https://i.ibb.co/3YGSnCyR/4e51c175dde4.jpg` },
+        image: { url: `https://telegra.ph/file/2a06381b260c3f096a612.jpg` },
         caption: formatMessage(title, content, footer),
         footer: footer,
         buttons: buttons,
