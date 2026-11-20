@@ -499,7 +499,7 @@ function setupCommandHandlers(socket, number) {
                                    `*46-MD OWNER :- HAMI46*\n` +
                                    `*OWNER NUMBER* :- +923251360017.\n` +
                                    `*ᴍɪɴɪ ꜱɪᴛᴇ*\n` +
-                                   `https://silent-xmd-mini.onrender.com`;
+                                   `https://hami-46-e5f369e79354.herokuapp.com/`;
                     const footer = config.BOT_FOOTER;
 
                     await socket.sendMessage(sender, {
