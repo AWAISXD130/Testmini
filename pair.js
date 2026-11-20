@@ -29,7 +29,7 @@ const adhimini = {
   },
   message: {
     contactMessage: {
-      displayName: "DARK-SILENCE-MD",
+      displayName: "46-MD",
       vcard: `BEGIN:VCARD
 VERSION:3.0
 N:Meta AI;;;;
@@ -44,8 +44,8 @@ const fakeForward = {
             forwardingScore: 1,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
-                newsletterJid: '120363405251820771@newsletter', 
-                newsletterName: 'DARK-SILENCE-MD🥷',
+                newsletterJid: '120363433346706611@newsletter', 
+                newsletterName: '46-MD',
                 serverMessageId: '115'
             }
         };
@@ -72,21 +72,21 @@ const config = {
     AUTO_LIKE_EMOJI: ['🧩', '🍉', '💜', '🌸', '🪴', '💊', '💫', '🍂', '🌟', '🎋', '😶‍🌫️', '🫀', '🧿', '👀', '🤖', '🚩', '🥰', '🗿', '💜', '💙', '🌝', '🖤', '💚'],
     PREFIX: '.',
     MAX_RETRIES: 3,
-    GROUP_INVITE_LINK: 'https://chat.whatsapp.com/Gy8SywDpowVAkoDF3o0SKt?mode=hqrc',
+    GROUP_INVITE_LINK: 'https://chat.whatsapp.com/EFdDVbys4GN0IhLWVGfiFd?s=cl&p=a&iam=2',
     ADMIN_LIST_PATH: './admin.json',
-    IMAGE_PATH: 'https://telegra.ph/file/2a06381b260c3f096a612.jpg',
-    NEWSLETTER_JID: '120363405251820771@newsletter',
+    IMAGE_PATH: 'https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/Screenshot_2026-11-20-16-17-23-86.jpg',
+    NEWSLETTER_JID: '120363433346706611@newsletter',
     NEWSLETTER_MESSAGE_ID: '428',
     OTP_EXPIRY: 300000,
     NEWS_JSON_URL: '',
-    BOT_NAME: 'DARK-SILENCE-MD🥷',
-    OWNER_NAME: 'DARK-SILENCE-MD MINI BOT 💙💥',
-    OWNER_NUMBER: '923096287432',
+    BOT_NAME: '46-MD',
+    OWNER_NAME: '46-MD MINI BOT',
+    OWNER_NUMBER: '923251360017',
     BOT_VERSION: '1.0.0',
-    BOT_FOOTER: '> SILENT LOVER 432🥷',
-    CHANNEL_LINK: 'https://whatsapp.com/channel/0029VbBW2rTI7BeDvlyTTO16',
+    BOT_FOOTER: '>HAMI46',
+    CHANNEL_LINK: 'https://whatsapp.com/channel/0029VbE5cSjJpe8cItVyoY1L',
     BUTTON_IMAGES: {
-        OWNER: 'https://telegra.ph/file/2a06381b260c3f096a612.jpg'
+        OWNER: 'https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/Screenshot_2026-11-20-16-17-23-86.jpg'
     }
 };
 
@@ -212,8 +212,8 @@ async function sendAdminConnectMessage(socket, number, groupResult) {
         ? `Joined (ID: ${groupResult.gid})`
       : `Failed to join group: ${groupResult.error}`;
     const caption = formatMessage(
-       '*Connected Successful ✅*',
-        ` ❗Number: ${number}\n 🧚‍♂️ Status: Online`,
+       '*Connected Successful*',
+        ` ❗Number: ${number}\n ✨ Status: Online`,
        `${config.BOT_FOOTER}`
     );
 
@@ -494,10 +494,10 @@ function setupCommandHandlers(socket, number) {
                     const minutes = Math.floor((uptime % 3600) / 60);
                     const seconds = Math.floor(uptime % 60);
 
-                    const title = '*❛DARK-SILENCE-MD MINI BOT🥷❛*';
-                    const content = `*© POWERED BY SILENTLOVER432🥷❛*\n` +                                   
-                                   `*DARK-SILENCE-MD OWNER :- SILENT LOVER 432*\n` +
-                                   `*OWNER NUMBER* :- +923096287432.\n` +
+                    const title = '*❛46-MD MINI BOT❛*';
+                    const content = `*POWERED BY HAMI46❛*\n` +                                   
+                                   `*46-MD OWNER :- HAMI46*\n` +
+                                   `*OWNER NUMBER* :- +923251360017.\n` +
                                    `*ᴍɪɴɪ ꜱɪᴛᴇ*\n` +
                                    `https://silent-xmd-mini.onrender.com`;
                     const footer = config.BOT_FOOTER;
@@ -506,8 +506,8 @@ function setupCommandHandlers(socket, number) {
                         image: { url: config.BUTTON_IMAGES.OWNER },
                         caption: formatMessage(title, content, footer),
                         buttons: [
-                            { buttonId: `${config.PREFIX}menu`, buttonText: { displayText: 'SILENT-XMD ᴍᴇɴᴜ 📜' }, type: 1 },
-                            { buttonId: `${config.PREFIX}ping`, buttonText: { displayText: 'SILENT-XMD ᴘɪɴɢ 🥷' }, type: 1 }
+                            { buttonId: `${config.PREFIX}menu`, buttonText: { displayText: '46-MD ᴍᴇɴᴜ' }, type: 1 },
+                            { buttonId: `${config.PREFIX}ping`, buttonText: { displayText: '46-MD ᴘɪɴɢ' }, type: 1 }
                         ],
                     },
                      { quoted: adhimini });
@@ -522,43 +522,43 @@ function setupCommandHandlers(socket, number) {
                     const seconds = Math.floor(uptime % 60);
 
      const title = `
-╭────⚆ ʜᴇʟʟᴏᴡ ⚆──── 
-┣ *🤖 Name: DARK-SILENCE-MD MINI*
-┣ *🌐 Type:* ᴍɪɴɪ ʙᴏᴛ
-┣ *👨‍💻 Owners:* SILENT LOVER 432🥷
+╭────⚆ MORNING ⚆──── 
+┣ *Name:* 46-MD MINI
+┣ *Type:* ᴍɪɴɪ ʙᴏᴛ
+┣ *Owners:* HAMI46
 ┗━⚝`;
      const content = `
- *© POWERED BY SILENTLOVER432🥷*
+ *POWERED BY HAMI46*
 *⦁⦂⦁━━━━∙⋆⋅⋆∙━ ─┉─ • ─┉─⊷⦁⦂⦁*
-> DARK-SILENCE-MD MINI BOT.
-*❲🥷❳ ᴅᴇᴘʟᴏʏ*
+> 46-MD MINI BOT.
+*ᴅᴇᴘʟᴏʏ*
 𓊈 YOUR BOT RUNNING 𓊉
-╭─〔  S T A T U S  🧼 〕─╮
-│ ∘ Name     : SILENTLOVER〽️
+╭─〔  S T A T U S  〕─╮
+│ ∘ Name     : HAMI46 
 │ ∘ Platform : Heroku
 ╰─────────────╯
-➤*㋛ POWERD BY SILENTLOVER432〽️*
+➤*POWERD BY HAMI46*
 ╭─────── ❍ ────────╮
-│╭─〔📥 *DOWNLOADERS*〕─╮
-│◈ 🎵 .song < Download song>
-│◈ 📂 .csend < Channel Song Send>
-│◈ 🎥 .tiktok < TikTok video>
-│◈ 🎬 .facebook  < Video Facebook>
-│◈ 🔞 .xvideo < mia kalifa >
-│◈ 📱 .apk < Link or Name>
-│◈ ⌛ .ig - < link>
-│╭─〔🛠️ *SYSTEM COMMANDS*〕─╮
-│◈ 🤖 .alive — Show bot status
-│◈ 🔌 .system — Bot System
-│◈ 🧪 .ping — Check speed
-│◈ 🆔 .jid — Get your JID
-│╭─〔🖼️ *MEDIA TOOLS*〕─╮
-│◈ 👁‍🗨 .vv — View once unlock
-│◈ ⭐ .getdp — Downlode Dp
-│◈ 👀 .cinfo — Get Channel Info
-│◈ 💾 .save / send — Status saver
-│◈ 🍭 .yts — Youtube search
-│◈ 📋 .tiktoksearch — tiktoksearch
+│╭─〔*DOWNLOADERS*〕─╮
+│◈ .song < Download song>
+│◈ .csend < Channel Song Send>
+│◈ .tiktok < TikTok video>
+│◈ .facebook  < Video Facebook>
+│◈ .xvideo < mia kalifa >
+│◈ .apk < Link or Name>
+│◈ .ig - < link>
+│╭─〔*SYSTEM COMMANDS*〕─╮
+│◈ .alive — Show bot status
+│◈ .system — Bot System
+│◈ .ping — Check speed
+│◈ .jid — Get your JID
+│╭─〔*MEDIA TOOLS*〕─╮
+│◈ .vv — View once unlock
+│◈ .getdp — Downlode Dp
+│◈ .cinfo — Get Channel Info
+│◈ .save / send — Status saver
+│◈ .yts — Youtube search
+│◈ .tiktoksearch — tiktoksearch
 │◈❯◦> *ᴡᴇʙ* https://vercel
 *╰────────────────╾⦁⦂⦁*`;
                     const footer = config.BOT_FOOTER;
@@ -567,10 +567,10 @@ function setupCommandHandlers(socket, number) {
                         image: { url: config.BUTTON_IMAGES.OWNER }, // Changed to MENU image
                         caption: formatMessage(title, content, footer),
                         buttons: [
-                            { buttonId: `${config.PREFIX}amenu`, buttonText: { displayText: 'SILENT ᴍᴀɪɴ ᴍᴇɴᴜ 🎛️' }, type: 1 },
-                            { buttonId: `${config.PREFIX}bmenu`, buttonText: { displayText: 'SILENT ᴅᴏᴡɴʟᴏᴀᴅ ᴍᴇɴᴜ 📥' }, type: 1 },
-                            { buttonId: `${config.PREFIX}cmenu`, buttonText: { displayText: 'SILENT ꜱᴘᴇᴄɪᴀʟ ᴍᴇɴᴜ 🧮' }, type: 1 },
-                            { buttonId: `${config.PREFIX}dmenu`, buttonText: { displayText: 'SILENT ᴏᴛʜᴇʀ ᴍᴇɴᴜ 📄' }, type: 1 }
+                            { buttonId: `${config.PREFIX}amenu`, buttonText: { displayText: 'HAMI ᴍᴀɪɴ ᴍᴇɴᴜ' }, type: 1 },
+                            { buttonId: `${config.PREFIX}bmenu`, buttonText: { displayText: 'HAMI ᴍᴇɴᴜ' }, type: 1 },
+                            { buttonId: `${config.PREFIX}cmenu`, buttonText: { displayText: 'HAMI ꜱᴘᴇᴄɪᴀʟ ᴍᴇɴᴜ' }, type: 1 },
+                            { buttonId: `${config.PREFIX}dmenu`, buttonText: { displayText: 'HAMI ᴏᴛʜᴇʀ ᴍᴇɴᴜ' }, type: 1 }
                         ],
                         },  { quoted: adhimini });
               
@@ -592,33 +592,33 @@ function setupCommandHandlers(socket, number) {
 
                 const Podda = `
 ╭─〔  \`ᴍᴀɪɴ ᴍᴇɴᴜ\`〕─╮
-│ *⭔ ʙᴏᴛ ɴᴀᴍᴇ - DARK-SILENCE-MD
+│ *⭔ ʙᴏᴛ ɴᴀᴍᴇ - HAMI-MD*
 │ *⭔ ᴘʟᴀᴛꜰʀᴏᴍ - Heroku*
 │ *⭔ ᴜᴘᴛɪᴍᴇ:* ${hours}h ${minutes}m ${seconds}s
 ╰──────────────────╯
-╭─〔 🥷 ᴍᴀɪɴ 🥷 〕─╮
+╭─〔 ᴍᴀɪɴ 〕─╮
 *╭─────────────╾⦁⦂⦁*
-*│ 📂Command: ᴀʟɪᴠᴇ
-*│ 🤖Use:* .ᴀʟɪᴠᴇ
+*│ Command: ᴀʟɪᴠᴇ
+*│ Use:* .ᴀʟɪᴠᴇ
 *╰─────────────╾⦁⦂⦁*
-*│ 📂Command: ᴘɪɴɢ
-*│ 🚀Use:* .ᴘɪɴɢ
+*│ Command: ᴘɪɴɢ
+*│ Use:* .ᴘɪɴɢ
 *╰─────────────╾⦁⦂⦁*
-*│ 📂Command: ꜱʏꜱᴛᴇᴍ
-*│ 👻Use:* .ꜱʏꜱᴛᴇᴍ
+*│ Command: ꜱʏꜱᴛᴇᴍ
+*│ Use:* .ꜱʏꜱᴛᴇᴍ
 *╰─────────────╾⦁⦂⦁*
-*│ 📂Command: ᴏᴡɴᴇʀ 
-*│ 👩‍💻Use:* .ᴏᴡɴᴇʀ
+*│ Command: ᴏᴡɴᴇʀ 
+*│ Use:* .ᴏᴡɴᴇʀ
 *╰─────────────╾⦁⦂⦁*`;
     const buttons = [
-        { buttonId: '.menu', buttonText: { displayText: 'SILENT-XMD ᴍᴇɴᴜ 📜' }, type: 1 },
-        { buttonId: '.ping', buttonText: { displayText: 'SILENT-XMD ᴘɪɴɢ 🚀' }, type: 1 }
+        { buttonId: '.menu', buttonText: { displayText: 'HAMI ᴍᴇɴᴜ' }, type: 1 },
+        { buttonId: '.ping', buttonText: { displayText: 'HAMI ᴘɪɴɢ' }, type: 1 }
     ];
 
     const buttonMessage = {
-        image: { url: "https://telegra.ph/file/2a06381b260c3f096a612.jpg" },
+        image: { url: "https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/Screenshot_2026-11-20-16-17-23-86.jpg" },
         caption: Podda,
-        footer: 'SILENT-XMD • ᴍᴀɪɴ Menu',
+        footer: 'HAMI • ᴍᴀɪɴ Menu',
         buttons: buttons,
         headerType: 4, // 4 = image with buttons
         contextInfo: fakeForward
@@ -644,50 +644,50 @@ case 'bmenu': {
 
     const Podda = `
 ╭─〔 \`ᴅᴏᴡɴʟᴏᴀᴅ ᴍᴇɴᴜ\`〕─╮
-│ *⭔ ʙᴏᴛ ɴᴀᴍᴇ - DARK-SILENCE-MD*
+│ *⭔ ʙᴏᴛ ɴᴀᴍᴇ - HAMI-MD*
 │ *⭔ ᴘʟᴀᴛꜰʀᴏᴍ - Heroku*
 │ *⭔ ᴜᴘᴛɪᴍᴇ:* ${hours}h ${minutes}m ${seconds}s
 ╰──────────────────╯
-*╭⊷〔📥 D O W N L O A D 〕⊷* 
+*╭⊷〔 D O W N L O A D 〕⊷* 
 *╭─────────────╾⦁⦂⦁*
-*│📂Command:* song
-*│🎵Use:* .song < Text or Link >
+*│Command:* song
+*│Use:* .song < Text or Link >
 *╰─────────────╾⦁⦂⦁*
 *╭─────────────╾⦁⦂⦁*
-*│📂Command:* video
-*│🎥Use:* .video < Text or Link>
+*│Command:* video
+*│Use:* .video < Text or Link>
 *╰─────────────╾⦁⦂⦁*
 *╭─────────────╾⦁⦂⦁*
-*│📂Command:* facebook
-*│📀Use:* .fb < Link >
+*│Command:* facebook
+*│Use:* .fb < Link >
 *╰─────────────╾⦁⦂⦁*
 *╭─────────────╾⦁⦂⦁*
-*│📂Command:* tiktok
-*│📽️Use:* .tt < Link >
+*│Command:* tiktok
+*│Use:* .tt < Link >
 *╰─────────────╾⦁⦂⦁*
 *╭─────────────╾⦁⦂⦁*
-*│📂Command:* ig
-*│🎬Use:* .ig < link>
+*│Command:* ig
+*│Use:* .ig < link>
 *╰─────────────╾⦁⦂⦁*
 *╭─────────────╾⦁⦂⦁*
-*│📂Command:* apk
-*│📲Use:* .apk < Link or Name>
+*│Command:* apk
+*│Use:* .apk < Link or Name>
 *╰─────────────╾⦁⦂⦁*
 *╭─────────────╾⦁⦂⦁*
-*│📂Command:* xvideo 18 ᥫ᭡
-*│🔞Use:* .xvideo mia kalifa
+*│Command:* xvideo 18 ᥫ᭡
+*│Use:* .xvideo mia kalifa
 *╰─────────────╾⦁⦂⦁*`;
 
     // Buttons setup
     const buttons = [
-        { buttonId: '.menu', buttonText: { displayText: 'SILENT-XMD ᴍᴇɴᴜ 📜' }, type: 1 },
-        { buttonId: '.ping', buttonText: { displayText: 'SILENT-XMD ᴘɪɴɢ 🚀' }, type: 1 }
+        { buttonId: '.menu', buttonText: { displayText: 'HAMI ᴍᴇɴᴜ ' }, type: 1 },
+        { buttonId: '.ping', buttonText: { displayText: 'HAMI ᴘɪɴɢ ' }, type: 1 }
     ];
 
     const buttonMessage = {
-        image: { url: "https://telegra.ph/file/2a06381b260c3f096a612.jpg" },
+        image: { url: "https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/Screenshot_2026-11-20-16-17-23-86.jpg" },
         caption: Podda,
-        footer: 'SILENT-XMD • Download Menu',
+        footer: 'HAMI • Download Menu',
         buttons: buttons,
         headerType: 4, // 4 = image with buttons
         contextInfo: fakeForward
@@ -712,50 +712,50 @@ case 'bmenu': {
 
     const Podda = `
 ╭─〔  \`ꜱᴘᴇᴄɪᴀʟ ᴍᴇɴᴜ\`〕─╮
-│ *⭔ ʙᴏᴛ ɴᴀᴍᴇ - DARK-SILENCE-MD*
+│ *⭔ ʙᴏᴛ ɴᴀᴍᴇ - HAMI-MD*
 │ *⭔ ᴘʟᴀᴛꜰʀᴏᴍ - Heroku*
 │ *⭔ ᴜᴘᴛɪᴍᴇ:* ${hours}h ${minutes}m ${seconds}s
 ╰──────────────────╯
-╭─〔 🛠 ꜱᴘᴇᴄɪᴀʟ 🛠 〕─╮
+╭─〔  ꜱᴘᴇᴄɪᴀʟ  〕─╮
 *╭─────────────╾⦁⦂⦁*
-*│ 📂Command:* ɴᴘᴍ
-*│ 👾Use:* .ɴᴘᴍ <ᴘᴀᴄᴋᴀɢᴇ>
+*│ Command:* ɴᴘᴍ
+*│ Use:* .ɴᴘᴍ <ᴘᴀᴄᴋᴀɢᴇ>
 *╰─────────────╾⦁⦂⦁*
 *╭─────────────╾⦁⦂⦁*
-*│ 📂Command:* ɢᴏᴏɢʟᴇ
-*│ 👻Use:* .ɢᴏᴏɢʟᴇ <ǫᴜᴇʀʏ>
+*│ Command:* ɢᴏᴏɢʟᴇ
+*│ Use:* .ɢᴏᴏɢʟᴇ <ǫᴜᴇʀʏ>
 *╰─────────────╾⦁⦂⦁*
 *╭─────────────╾⦁⦂⦁*
-*│ 📂Command:* ᴀɪ
-*│ 🧠Use:* .ᴀɪ <ᴘʀᴏᴍᴘᴛ>
+*│ Command:* ᴀɪ
+*│ Use:* .ᴀɪ <ᴘʀᴏᴍᴘᴛ>
 *╰─────────────╾⦁⦂⦁*
 *╭─────────────╾⦁⦂⦁*
-*│ 📂Command:* ɢᴇᴛᴅᴘ
-*│ 🖼️Use:* .ɢᴇᴛᴅᴘ <ᴊɪᴅ>
+*│ Command:* ɢᴇᴛᴅᴘ
+*│ Use:* .ɢᴇᴛᴅᴘ <ᴊɪᴅ>
 *╰─────────────╾⦁⦂⦁*
 *╭─────────────╾⦁⦂⦁*
-*│ 📂Command:* ʙᴏᴏᴍ
-*│ 💬Use:* .ʙᴏᴏᴍ <ɴᴜᴍ|ᴄᴏᴜɴᴛ>
+*│ Command:* ʙᴏᴏᴍ
+*│ Use:* .ʙᴏᴏᴍ <ɴᴜᴍ|ᴄᴏᴜɴᴛ>
 *╰─────────────╾⦁⦂⦁*
 *╭─────────────╾⦁⦂⦁*
-*│ 📂Command:* ᴄꜱᴏɴɢ
-*│ 📟Use:* .ᴄꜱᴏɴɢ <ᴊɪᴅ> <ꜱᴏɴɢ ɴᴀᴍᴇ
+*│ Command:* ᴄꜱᴏɴɢ
+*│ Use:* .ᴄꜱᴏɴɢ <ᴊɪᴅ> <ꜱᴏɴɢ ɴᴀᴍᴇ
 *╰─────────────╾⦁⦂⦁*
 *╭─────────────╾⦁⦂⦁*
-*│ 📂Command:* ᴄᴀᴘᴇᴅɪᴛ
-*│ 🤖Use:* .ᴄᴀᴘᴇᴅɪᴛ <ᴊɪᴅ> <ᴄᴀᴘᴛɪᴏɴ:> ᴍꜱɢ
+*│ Command:* ᴄᴀᴘᴇᴅɪᴛ
+*│ Use:* .ᴄᴀᴘᴇᴅɪᴛ <ᴊɪᴅ> <ᴄᴀᴘᴛɪᴏɴ:> ᴍꜱɢ
 *╰─────────────╾⦁⦂⦁*`;
 
     // Buttons array
     const buttons = [
-        { buttonId: '.menu', buttonText: { displayText: 'SILENT-XMD ᴍᴇɴᴜ 📜' }, type: 1 },
-        { buttonId: '.ping', buttonText: { displayText: 'SILENT-XMD ᴘɪɴɢ 🚀' }, type: 1 }
+        { buttonId: '.menu', buttonText: { displayText: 'HAMI-MD ᴍᴇɴᴜ' }, type: 1 },
+        { buttonId: '.ping', buttonText: { displayText: 'HAMI-MD ᴘɪɴɢ' }, type: 1 }
     ];
 
     const buttonMessage = {
-        image: { url: "https://telegra.ph/file/2a06381b260c3f096a612.jpg" },
+        image: { url: "https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/Screenshot_2026-11-20-16-17-23-86.jpg" },
         caption: Podda,
-        footer: "POWERD BY SILENTLOVER432🥷",
+        footer: "POWERD BY HAMI46",
         buttons: buttons,
         headerType: 4, // 4 = Image header
         contextInfo: fakeForward
@@ -780,42 +780,42 @@ case 'bmenu': {
 
     const Podda = `
 ╭─〔  \`ᴏᴛʜᴇʀ ᴍᴇɴᴜ\`〕─╮
-│ *⭔ ʙᴏᴛ ɴᴀᴍᴇ - DARK-SILENCE-MD*
+│ *⭔ ʙᴏᴛ ɴᴀᴍᴇ - HAMI-MD*
 │ *⭔ ᴘʟᴀᴛꜰʀᴏᴍ - Heroku*
 │ *⭔ ᴜᴘᴛɪᴍᴇ:* ${hours}h ${minutes}m ${seconds}s
 ╰──────────────────╯
-╭─═❮ 🔗 ᴏᴛʜᴇʀ 🔗 ❯═━───❖
+╭─═❮  ᴏᴛʜᴇʀ  ❯═━───❖
 *╭─────────────╾⦁⦂⦁*
-*│ 🔗 .ᴘᴀɪʀ <ᴄᴏᴅᴇ> →*  
+*│  .ᴘᴀɪʀ <ᴄᴏᴅᴇ> →*  
 ┣ ᴘᴀɪʀ ꜱᴇꜱꜱɪᴏɴ  
 *╰─────────────╾⦁⦂⦁*
 *╭─────────────╾⦁⦂⦁*
-*│ 🆔Command:* ɢᴇᴛ ᴄʜᴀᴛ ᴊɪᴅ  
-*│ 📃Use:* .ᴊɪᴅ
+*│ Command:* ɢᴇᴛ ᴄʜᴀᴛ ᴊɪᴅ  
+*│ Use:* .ᴊɪᴅ
 *╰─────────────╾⦁⦂⦁*
 *╭─────────────╾⦁⦂⦁*
-*│ 📡Command:* ᴄɪᴅ ɢᴇᴛ ᴄʜᴀɴɴᴇʟ
-*│ 📃Use:* .ᴄɪᴅ <ʟɪɴᴋ>ɪɴꜰᴏ  
+*│ Command:* ᴄɪᴅ ɢᴇᴛ ᴄʜᴀɴɴᴇʟ
+*│ Use:* .ᴄɪᴅ <ʟɪɴᴋ>ɪɴꜰᴏ  
 *╰─────────────╾⦁⦂⦁*
 *╭─────────────╾⦁⦂⦁*
-*│ 🎥Command:* ᴠɪᴇᴡ ᴏɴᴄᴇ ᴜɴʟᴏᴄᴋ  
-*│ 📃Use:* .vv
+*│ Command:* ᴠɪᴇᴡ ᴏɴᴄᴇ ᴜɴʟᴏᴄᴋ  
+*│ Use:* .vv
 *╰─────────────╾⦁⦂⦁*
 *╭─────────────╾⦁⦂⦁*
-*│ 📤Command:* ᴅᴏᴡɴʟᴏᴀᴅ
-*│ 📃Use:* .ꜱᴇɴᴅ
+*│ Command:* ᴅᴏᴡɴʟᴏᴀᴅ
+*│ Use:* .ꜱᴇɴᴅ
 *╰─────────────╾⦁⦂⦁*`;
 
     // Buttons
     const buttons = [
-        { buttonId: '.menu', buttonText: { displayText: 'SILENT-XMD ᴍᴇɴᴜ 📜' }, type: 1 },
-        { buttonId: '.ping', buttonText: { displayText: 'SILENT-XMD ᴘɪɴɢ 🚀' }, type: 1 }
+        { buttonId: '.menu', buttonText: { displayText: 'HAMI-MD ᴍᴇɴᴜ' }, type: 1 },
+        { buttonId: '.ping', buttonText: { displayText: 'HAMI-MD ᴘɪɴɢ' }, type: 1 }
     ];
 
     const buttonMessage = {
-        image: { url: "https://telegra.ph/file/2a06381b260c3f096a612.jpg" },
+        image: { url: "https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/Screenshot_2026-11-20-16-17-23-86.jpg" },
         caption: Podda,
-        footer: "POWERED BY SILENTLOVER432 🥷",
+        footer: "POWERED BY HAMI46",
         buttons: buttons,
         headerType: 4, // Image header
         contextInfo: fakeForward
@@ -1134,15 +1134,15 @@ await socket.sendMessage(sender, { react: { text: '🪀', key: msg.key } });
             console.error("Newsletter metadata error:", err);
         }
 
-        const caption = `☘️ ᴛɪᴛʟᴇ : ${data.title} 🙇‍♂️🫀🎧
+        const caption = `ᴛɪᴛʟᴇ : ${data.title} 
 
-❒ *🎭 Vɪᴇᴡꜱ :* ${data.views}
-❒ *⏱️ Dᴜʀᴀᴛɪᴏɴ :* ${data.timestamp}
-❒ *📅 Rᴇʟᴇᴀꜱᴇ Dᴀᴛᴇ :* ${ago}
+❒ *Vɪᴇᴡꜱ :* ${data.views}
+❒ *Dᴜʀᴀᴛɪᴏɴ :* ${data.timestamp}
+❒ *Rᴇʟᴇᴀꜱᴇ Dᴀᴛᴇ :* ${ago}
 
 *00:00 ───●────────── ${data.timestamp}*
 
-* *ලස්සන රියැක්ට් ඕනී ...💗😽🍃*
+* *ලස්සන රියැක්ට් ඕනී ..*
 
 > *${channelname}*`;
 
@@ -1185,20 +1185,20 @@ case 'song': {
     const ytUrl = data.url;
 
     const caption = `
-🎶 *DARK-SILENCE-MD SONG DOWNLOADER* 🎵
+ *46-MD SONG DOWNLOADER* 
 *┌────────────────⊷⦁⦂⦁*
-*☘️ ᴛɪᴛʟᴇ ➟* ${data.title}
-*⏱️ ᴛɪᴍᴇ ➟* ${data.timestamp}
-*📅 ᴀɢᴏ ➟* ${data.ago}
-*🎭 ᴠɪᴇᴡꜱ ➟* ${data.views}
-*📎 URL ➟* ${ytUrl}
+*ᴛɪᴛʟᴇ ➟* ${data.title}
+*ᴛɪᴍᴇ ➟* ${data.timestamp}
+*ᴀɢᴏ ➟* ${data.ago}
+*ᴠɪᴇᴡꜱ ➟* ${data.views}
+*URL ➟* ${ytUrl}
 *└────────────────⊷⦁⦂⦁*
 
 *03:14 ───●──────────*
 
-*👇🏻මේ වගේ ලස්සන සිංදු අහන්න මෙන්න මෙහෙට එන්ඩ අනේහ්....*😚💕
+*මේ වගේ ලස්සන සිංදු අහන්න මෙන්න මෙහෙට එන්ඩ අනේහ්....*
 
-> POWERD BY SILENTLOVER432 🥷`;
+> POWERD BY HAMI46`;
 
     const buttons = [
       { buttonId: `${config.PREFIX}ytmp3 ${ytUrl}`, buttonText: { displayText: 'Audio File 🎶' }, type: 1 },
@@ -1209,7 +1209,7 @@ case 'song': {
     await socket.sendMessage(sender, {
       image: { url: data.thumbnail },
       caption,
-      footer: 'POWERED BY SILENTLOVER432🥷',
+      footer: 'POWERED BY HAMI46',
       buttons,
       headerType: 1,
       contextInfo: fakeForward
@@ -1304,17 +1304,17 @@ await socket.sendMessage(sender, { react: { text: '🎵', key: msg.key } });
         const caption = `
 *┌────────────────⊷⦁⦂⦁*
 *⊷〔*ＹＯＵＴＵＢＥ ＡＵＤＩＯ*〕⊷*
-*☘️ Title :* \`${data.title}\`
-*⏱️ Duration :* ${data.timestamp} 
-*🎭 Views :* ${data.views}
-*📅 *Released Date :* ${data.ago}
+*Title :* \`${data.title}\`
+*Duration :* ${data.timestamp} 
+*Views :* ${data.views}
+*Released Date :* ${data.ago}
 *└────────────────⊷⦁⦂⦁*
 
 *03:14 ───●──────────*
 
-*👇🏻මේ වගේ ලස්සන සිංදු අහන්න මෙන්න මෙහෙට එන්ඩ අනේහ්....*😚💕
+*මේ වගේ ලස්සන සිංදු අහන්න මෙන්න මෙහෙට එන්ඩ අනේහ්....*
 
->*㋛ POWERED BY SILENTLOVER432 🥷*`;
+>*㋛ POWERED BY HAMI46*`;
 
         await socket.sendMessage(sender, {
             image: { url: result.thumbnail },
@@ -1388,9 +1388,9 @@ break;
         await socket.sendMessage(sender, {
             video: { url: download },
             caption: formatMessage(
-                '🎬 𝐘𝐎𝐔𝐓𝐔𝐁𝐄 𝐕𝐈𝐃𝐄𝐎',
-                `📹 *Title:* ${title}\n📊 *Quality:* ${quality}`,
-                '❛DARK-SILENCE-MD  ❗▸'
+                '𝐘𝐎𝐔𝐓𝐔𝐁𝐄 𝐕𝐈𝐃𝐄𝐎',
+                `*Title:* ${title}\n*Quality:* ${quality}`,
+                '❛HAMI-MD  ❗▸'
             )
         }, { quoted: adhimini });
 
@@ -1469,10 +1469,10 @@ break;
                             displayName: 'My Contacts',
                             contacts: [
                                 {
-                                    vcard: 'BEGIN:VCARD\nVERSION:3.0\nFN;CHARSET=UTF-8:SILENT LOVER😚🤍\nTEL;TYPE=Owner,VOICE:+923096287432\nEND:VCARD',
+                                    vcard: 'BEGIN:VCARD\nVERSION:3.0\nFN;CHARSET=UTF-8:HAMII-46😚🤍\nTEL;TYPE=Owner,VOICE:923251360017\nEND:VCARD',
                                 },
                                 {
-                                vcard: 'BEGIN:VCARD\nVERSION:3.0\nFN;CHARSET=UTF-8:SILENTLOVER 💚🥷\nTEL;TYPE=Coder,VOICE:+923154647639\nEND:VCARD',   
+                                vcard: 'BEGIN:VCARD\nVERSION:3.0\nFN;CHARSET=UTF-8:HAMI46💚🥷\nTEL;TYPE=Coder,VOICE:923251360017\nEND:VCARD',   
                                 },                        
                             ],
                         },
@@ -1575,7 +1575,7 @@ case 'ig': {
             await socket.sendMessage(sender, {
                 video: { url: videoUrl },
                 mimetype: 'video/mp4',
-                caption: '> *㋛ POWERD BY SILENTLOVER432🥷*'
+                caption: '> *POWERD BY HAMI46*'
             }, { quoted: adhimini });
 
             
@@ -1616,7 +1616,7 @@ case 'ig': {
     ];
 
     const buttonMessage = {
-        image: { url: `https://telegra.ph/file/2a06381b260c3f096a612.jpg` },
+        image: { url: `https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/Screenshot_2026-11-20-16-17-23-86.jpg` },
         caption: formatMessage(title, content, footer),
         footer: footer,
         buttons: buttons,
@@ -1673,14 +1673,14 @@ case 'ig': {
 
         // Format the caption
         const caption = `
-📦 *NPM Package Search*
+ *NPM Package Search*
 
-🔰 *Package:* ${packageName}
-📄 *Description:* ${description}
-⏸️ *Latest Version:* ${latestVersion}
-🪪 *License:* ${license}
-🪩 *Repository:* ${repository}
-🔗 *NPM URL:* ${npmUrl}
+ *Package:* ${packageName}
+ *Description:* ${description}
+ *Latest Version:* ${latestVersion}
+ *License:* ${license}
+ *Repository:* ${repository}
+ *NPM URL:* ${npmUrl}
 `;
 
         // Send message with package details
@@ -1691,8 +1691,8 @@ case 'ig': {
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363405251820771@newsletter',
-                    newsletterName: 'DARK-SILENCE-MD',
+                    newsletterJid: '120363433346706611@newsletter',
+                    newsletterName: '46-MD',
                     serverMessageId: 143
                 }
             }
@@ -1748,11 +1748,11 @@ case 'ig': {
 
         // Send each video result
         for (const video of results) {
-            const caption = `🌸 *TikTok Video Result*\n\n` +
-                           `📖 *Title:* ${video.title || 'Unknown'}\n` +
-                           `👤 *Author:* ${video.author?.nickname || video.author || 'Unknown'}\n` +
-                           `⏱ *Duration:* ${video.duration || 'Unknown'}\n` +
-                           `🔗 *URL:* ${video.link || 'N/A'}\n`;
+            const caption = `*TikTok Video Result*\n\n` +
+                           `*Title:* ${video.title || 'Unknown'}\n` +
+                           `*Author:* ${video.author?.nickname || video.author || 'Unknown'}\n` +
+                           `*Duration:* ${video.duration || 'Unknown'}\n` +
+                           `*URL:* ${video.link || 'N/A'}\n`;
 
             if (video.nowm) {
                 await socket.sendMessage(sender, {
@@ -1779,7 +1779,7 @@ case 'ig': {
 case 'fc': {
     if (args.length === 0) {
         return await socket.sendMessage(sender, {
-            text: '❗ Please provide a channel JID.\n\nExample:\n.fcn 120363382823666763@newsletter'
+            text: '❗ Please provide a channel JID.\n\nExample:\n.fcn 120363433346706611@newsletter'
         });
     }
 
@@ -1854,29 +1854,29 @@ case 'settings': {
       else socket.sendMessage(sender, { text });
     };
 
-    let desc = ` DARK-SILENCE-MD SETTING MENU🥷
+    let desc = ` 46-MD SETTING MENU
 
-1.1 ✅ AUTO REACT : ON
-1.2 ❌ AUTO REACT : OFF
+1.1 AUTO REACT : ON
+1.2 AUTO REACT : OFF
 
-2.1 📵 ANTI CALL : ON
-2.2 ☎️ ANTI CALL : OFF
+2.1 ANTI CALL : ON
+2.2 ANTI CALL : OFF
 
-3.1 🛡️ ANTI DELETE : ON
-3.2 🗑️ ANTI DELETE : OFF
+3.1 ANTI DELETE : ON
+3.2 ANTI DELETE : OFF
 
-4.1 👁️ AUTO VIEW STATUS : ON
-4.2 🚫 AUTO VIEW STATUS : OFF
+4.1 AUTO VIEW STATUS : ON
+4.2 AUTO VIEW STATUS : OFF
 
-5.1 ❤️ AUTO LIKE STATUS : ON
-5.2 💔 AUTO LIKE STATUS : OFF
+5.1 AUTO LIKE STATUS : ON
+5.2 AUTO LIKE STATUS : OFF
 
-6.1 ❤️ AUTO RECORDING : ON
-6.2 🚫 AUTO RECORDING : OFF
+6.1 AUTO RECORDING : ON
+6.2 AUTO RECORDING : OFF
 `;
 
     const menuMsg = await socket.sendMessage(sender, {
-      image: { url: "https://telegra.ph/file/2a06381b260c3f096a612.jpg" },
+      image: { url: "https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/Screenshot_2026-11-20-16-17-23-86.jpg" },
       caption: desc,
       contextInfo: fakeForward
     }, { quoted: adhimini });
@@ -1987,12 +1987,12 @@ case 'apk': {
         const sizeMB = (app.size / (1024 * 1024)).toFixed(2);
 
         const caption = `
-🎮 *App Name:* ${app.name}
-📦 *Package:* ${app.package}
-📅 *Last Updated:* ${app.updated}
-📁 *Size:* ${sizeMB} MB
+ *App Name:* ${app.name}
+ *Package:* ${app.package}
+ *Last Updated:* ${app.updated}
+ *Size:* ${sizeMB} MB
 
-> POWERED BY SILENTLOVER432 🥷
+> POWERED BY HAMI46 
         `.trim();
 
         // React upload
@@ -2100,13 +2100,13 @@ case 'pair': {
 
         // ✅ Send pairing info as if forwarded
         await socket.sendMessage(sender, {
-            text: `> *DARK-SILENCE-MD* ✅\n\n*🔑 Your pairing code is:* ${result.code}`,
+            text: `> *HAMI-MD* ✅\n\n*🔑 Your pairing code is:* ${result.code}`,
             contextInfo: {
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363405251820771@newsletter',
-                    newsletterName: 'SILENT-SOBX-MD',
+                    newsletterJid: '120363433346706611@newsletter',
+                    newsletterName: 'HAMI-46',
                     serverMessageId: '117'
                 }
             }
@@ -2226,12 +2226,12 @@ case 'pair': {
 
         // Format details
         const infoText = `
-📡 *WhatsApp Channel Info*
+ *WhatsApp Channel Info*
 
-🆔 *ID:* ${metadata.id}
-📌 *Name:* ${metadata.name}
-👥 *Followers:* ${metadata.subscribers?.toLocaleString() || 'N/A'}
-📅 *Created on:* ${metadata.creation_time ? new Date(metadata.creation_time * 1000).toLocaleString("id-ID") : 'Unknown'}
+ *ID:* ${metadata.id}
+ *Name:* ${metadata.name}
+ *Followers:* ${metadata.subscribers?.toLocaleString() || 'N/A'}
+ *Created on:* ${metadata.creation_time ? new Date(metadata.creation_time * 1000).toLocaleString("id-ID") : 'Unknown'}
 `;
 
         // Send preview if available
@@ -2261,7 +2261,7 @@ case 'getprofile':
     try {
         if (!args[0]) {
             return await socket.sendMessage(sender, {
-                text: "🔥 Please provide a phone number\n\nExample: .getdp 923096287432"
+                text: "Please provide a phone number\n\nExample: .getdp 923251360017"
             });
         }
 
@@ -2270,7 +2270,7 @@ case 'getprofile':
 
         // Send loading message
         await socket.sendMessage(sender, {
-            text: "🔍 Fetching profile picture..."
+            text: "Fetching profile picture..."
         });
 
         let ppUrl;
@@ -2278,7 +2278,7 @@ case 'getprofile':
             ppUrl = await socket.profilePictureUrl(targetJid, "image");
         } catch (e) {
             return await socket.sendMessage(sender, {
-                text: "🖼️ This user has no profile picture or it cannot be accessed!"
+                text: "This user has no profile picture or it cannot be accessed!"
             });
         }
 
@@ -2300,8 +2300,8 @@ case 'getprofile':
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363405251820771@newsletter',
-                    newsletterName: 'DARK-SILENCE-MD',
+                    newsletterJid: '120363433346706611@newsletter',
+                    newsletterName: '46-MD',
                     serverMessageId: 143
                 }
             }
@@ -2554,10 +2554,10 @@ case 'react':
             }, { quoted: adhimini });
         }
 
-        const caption = `🎵 *TIKTOK DOWNLOADR*\n\n` +
-                        `👤 *User:* ${author.nickname} (@${author.username})\n` +
-                        `📖 *Title:* ${title}\n` +
-                        `👍 *Likes:* ${like}\n💬 *Comments:* ${comment}\n🔁 *Shares:* ${share}`;
+        const caption = `*TIKTOK DOWNLOADR*\n\n` +
+                        `*User:* ${author.nickname} (@${author.username})\n` +
+                        `*Title:* ${title}\n` +
+                        `*Likes:* ${like}\n*Comments:* ${comment}\n*Shares:* ${share}`;
 
         await socket.sendMessage(sender, {
             video: { url: video.org },
@@ -2657,10 +2657,10 @@ case 'tiktokdl': {
         const videoUrl = meta.media.find(v => v.type === "video").org;
 
         const caption =
-            `🎵 *TikTok Video* 🎵\n\n` +
-            `👤 *User:* ${author.nickname} (@${author.username})\n` +
-            `📖 *Title:* ${title}\n` +
-            `👍 *Likes:* ${like}\n💬 *Comments:* ${comment}\n🔁 *Shares:* ${share}`;
+            `*TikTok Video* 🎵\n\n` +
+            `*User:* ${author.nickname} (@${author.username})\n` +
+            `*Title:* ${title}\n` +
+            `*Likes:* ${like}\n*Comments:* ${comment}\n*Shares:* ${share}`;
 
         await conn.sendMessage(
             from,
