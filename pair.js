@@ -1869,7 +1869,7 @@ case 'settings': {
       else socket.sendMessage(sender, { text });
     };
 
-    let desc = ` DARK-SILENCE-MD SETTING MENU🥷
+    let desc = ` 46-MD SETTING MENU🥷
 
 1.1 AUTO REACT : ON
 1.2 AUTO REACT : OFF
@@ -1891,7 +1891,7 @@ case 'settings': {
 `;
 
     const menuMsg = await socket.sendMessage(sender, {
-      image: { url: "https://i.ibb.co/3YGSnCyR/4e51c175dde4.jpg" },
+      image: { url: "https://telegra.ph/file/2a06381b260c3f096a612.jpg" },
       caption: desc,
       contextInfo: fakeForward
     }, { quoted: adhimini });
