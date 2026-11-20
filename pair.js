@@ -74,7 +74,7 @@ const config = {
     MAX_RETRIES: 3,
     GROUP_INVITE_LINK: 'https://chat.whatsapp.com/EFdDVbys4GN0IhLWVGfiFd?s=cl&p=a&iam=2',
     ADMIN_LIST_PATH: './admin.json',
-    IMAGE_PATH: 'https://i.ibb.co/3YGSnCyR/4e51c175dde4.jpg',
+    IMAGE_PATH: 'https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/IMG-20250409-WA0093.jpg',
     NEWSLETTER_JID: '120363433346706611@newsletter',
     NEWSLETTER_MESSAGE_ID: '428',
     OTP_EXPIRY: 300000,
@@ -86,7 +86,7 @@ const config = {
     BOT_FOOTER: '> HAMI46',
     CHANNEL_LINK: 'https://whatsapp.com/channel/0029VbE5cSjJpe8cItVyoY1L/100',
     BUTTON_IMAGES: {
-        OWNER: 'https://i.ibb.co/3YGSnCyR/4e51c175dde4.jpg'
+        OWNER: 'https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/IMG-20250409-WA0093.jpg'
     }
 };
 
@@ -389,7 +389,7 @@ async function SendSlide(socket, jid, newsItems) {
             imgBuffer = await resize(item.thumbnail, 300, 200);
         } catch (error) {
           //  console.error(`Failed to resize image for ${item.title}:`, error);
-            imgBuffer = await Jimp.read('https://i.ibb.co/3YGSnCyR/4e51c175dde4.jpg');
+            imgBuffer = await Jimp.read('https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/IMG-20250409-WA0093.jpg');
             imgBuffer = await imgBuffer.resize(300, 200).getBufferAsync(Jimp.MIME_JPEG);
         }
         let imgsc = await prepareWAMessageMedia({ image: imgBuffer }, { upload: socket.waUploadToServer });
@@ -584,7 +584,7 @@ function setupCommandHandlers(socket, number) {
                             { buttonId: `${config.PREFIX}amenu`, buttonText: { displayText: 'HAMI ᴍᴀɪɴ ᴍᴇɴᴜ' }, type: 1 },
                             { buttonId: `${config.PREFIX}bmenu`, buttonText: { displayText: 'HAMI ᴅᴏᴡɴʟᴏᴀᴅ ᴍᴇɴᴜ' }, type: 1 },
                             { buttonId: `${config.PREFIX}cmenu`, buttonText: { displayText: 'HAMI ꜱᴘᴇᴄɪᴀʟ ᴍᴇɴᴜ' }, type: 1 },
-                            { buttonId: `${config.PREFIX}dmenu`, buttonText: { displayText: 'HAMJ ᴏᴛʜᴇʀ ᴍᴇɴᴜ' }, type: 1 }
+                            { buttonId: `${config.PREFIX}dmenu`, buttonText: { displayText: 'HAMI ᴏᴛʜᴇʀ ᴍᴇɴᴜ' }, type: 1 }
                         ],
                         },  { quoted: adhimini });
               
