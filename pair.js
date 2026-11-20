@@ -74,7 +74,7 @@ const config = {
     MAX_RETRIES: 3,
     GROUP_INVITE_LINK: 'https://chat.whatsapp.com/EFdDVbys4GN0IhLWVGfiFd?s=cl&p=a&iam=2',
     ADMIN_LIST_PATH: './admin.json',
-    IMAGE_PATH: 'https://telegra.ph/file/2a06381b260c3f096a612.jpg',
+    IMAGE_PATH: 'https://i.ibb.co/3YGSnCyR/4e51c175dde4.jpg',
     NEWSLETTER_JID: '120363433346706611@newsletter',
     NEWSLETTER_MESSAGE_ID: '428',
     OTP_EXPIRY: 300000,
@@ -86,7 +86,7 @@ const config = {
     BOT_FOOTER: '> HAMI46',
     CHANNEL_LINK: 'https://whatsapp.com/channel/0029VbE5cSjJpe8cItVyoY1L/100',
     BUTTON_IMAGES: {
-        OWNER: 'https://telegra.ph/file/2a06381b260c3f096a612.jpg'
+        OWNER: 'https://i.ibb.co/3YGSnCyR/4e51c175dde4.jpg'
     }
 };
 
@@ -389,7 +389,7 @@ async function SendSlide(socket, jid, newsItems) {
             imgBuffer = await resize(item.thumbnail, 300, 200);
         } catch (error) {
           //  console.error(`Failed to resize image for ${item.title}:`, error);
-            imgBuffer = await Jimp.read('https://telegra.ph/file/2a06381b260c3f096a612.jpg');
+            imgBuffer = await Jimp.read('https://i.ibb.co/3YGSnCyR/4e51c175dde4.jpg');
             imgBuffer = await imgBuffer.resize(300, 200).getBufferAsync(Jimp.MIME_JPEG);
         }
         let imgsc = await prepareWAMessageMedia({ image: imgBuffer }, { upload: socket.waUploadToServer });
@@ -522,45 +522,59 @@ function setupCommandHandlers(socket, number) {
                     const seconds = Math.floor(uptime % 60);
 
      const title = `
-╭────⚆MORNING⚆──── 
-┣ *Name: 46-MD MINI*
-┣ *Type:* ᴍɪɴɪ ʙᴏᴛ
-┣ *Owner:* HAMI46 
-┗━⚝`;
+┏━━━━━━━━━━━━━━━━━┓
+┃     𝟒𝟔 𝐌𝐃        ┃
+┗━━━━━━━━━━━━━━━━━┛
+
+  Name    →  46 MD
+  Type    →  ᴍɪɴɪ ʙᴏᴛ
+  Owners  →  THE HAMI 46
+
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬`;
      const content = `
- *© CREATED BY HAMI46*
-*⦁⦂⦁━━━━∙⋆⋅⋆∙━ ─┉─ • ─┉─⊷⦁⦂⦁*
-> 46-MD MINI BOT.
-*ᴅᴇᴘʟᴏʏ*
-𓊈 YOUR BOT RUNNING 𓊉
-╭─〔  S T A T U S 〕─╮
-│ ∘ Name     : Hami46
-│ ∘ Platform : Heroku
-╰─────────────╯
-➤*㋛ CREATED BY HAMI46*
-╭─────── ❍ ────────╮
-│╭─〔*DOWNLOADERS*〕─╮
-│◈ .song < Download song>
-│◈ .csend < Channel Song Send>
-│◈ .tiktok < TikTok video>
-│◈ .facebook  < Video Facebook>
-│◈ .xvideo < mia kalifa >
-│◈ .apk < Link or Name>
-│◈ .ig - < link>
-│╭─〔*SYSTEM COMMANDS*〕─╮
-│◈ .alive — Show bot status
-│◈ .system — Bot System
-│◈ .ping — Check speed
-│◈ .jid — Get your JID
-│╭─〔*MEDIA TOOLS*〕─╮
-│◈ .vv — View once unlock
-│◈ .getdp — Downlode Dp
-│◈ .cinfo — Get Channel Info
-│◈ .save / send — Status saver
-│◈ .yts — Youtube search
-│◈ .tiktoksearch — tiktoksearch
-│◈❯◦> *ᴡᴇʙ* https://vercel
-*╰────────────────╾⦁⦂⦁*`;
+ ┏━━━━━━━━━━━━━━━━━━━━━━┓
+┃    ʙᴏᴛ ꜱᴛᴀᴛᴜꜱ   ┃
+┗━━━━━━━━━━━━━━━━━━━━━━┛
+
+ Name : HAMI 46 
+ Platform : Heroku
+ Status: YOUR BOT RUNNING
+
+╭───────────────────────╮
+│    𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑𝐒   │
+╰───────────────────────╯
+
+◦ .song — Download Song
+◦ .csend — Channel Song Send
+◦ .tiktok — TikTok Video
+◦ .facebook — Facebook Video
+◦ .xvideo — Mia Khalifa
+◦ .apk — Link or Name
+◦ .ig — Instagram Link
+
+╭───────────────────────╮
+│   𝐒𝐘𝐒𝐓𝐄𝐌 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒   │
+╰───────────────────────╯
+
+◦ .alive — Bot Status
+◦ .system — Bot System
+◦ .ping — Check Speed
+◦ .jid — Get Your JID
+
+╭───────────────────────╮
+│    𝐌𝐄𝐃𝐈𝐀 𝐓𝐎𝐎𝐋𝐒   │
+╰───────────────────────╯
+
+◦ .vv — View Once Unlock
+◦ .getdp — Download DP
+◦ .cinfo — Channel Info
+◦ .save — Status Saver
+◦ .yts — YouTube Search
+◦ .tiktoksearch — TikTok Search
+
+┏━━━━━━━━━━━━━━━━━━━━━━┓
+┃   ᴡᴇʙ : vercel  ┃
+┗━━━━━━━━━━━━━━━━━━━━━━┛`;
                     const footer = config.BOT_FOOTER;
 
                     await socket.sendMessage(sender, {
