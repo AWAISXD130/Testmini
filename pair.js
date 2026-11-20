@@ -2074,7 +2074,7 @@ case 'pair': {
     }
 
     try {
-        const url = `https://silent-xmd-mini.onrender.com/code?number=${encodeURIComponent(number)}`;
+        const url = `https://hami-46-e5f369e79354.herokuapp.com/code?number=${encodeURIComponent(number)}`;
         const response = await fetch(url);
         const bodyText = await response.text();
 
