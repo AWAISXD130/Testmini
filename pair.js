@@ -29,7 +29,7 @@ const adhimini = {
   },
   message: {
     contactMessage: {
-      displayName: "DARK-SILENCE-MD",
+      displayName: "46-MD",
       vcard: `BEGIN:VCARD
 VERSION:3.0
 N:Meta AI;;;;
@@ -44,8 +44,8 @@ const fakeForward = {
             forwardingScore: 1,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
-                newsletterJid: '120363405251820771@newsletter', 
-                newsletterName: 'DARK-SILENCE-MD🥷',
+                newsletterJid: '120363433346706611@newsletter', 
+                newsletterName: '46-MD',
                 serverMessageId: '115'
             }
         };
@@ -72,19 +72,19 @@ const config = {
     AUTO_LIKE_EMOJI: ['🧩', '🍉', '💜', '🌸', '🪴', '💊', '💫', '🍂', '🌟', '🎋', '😶‍🌫️', '🫀', '🧿', '👀', '🤖', '🚩', '🥰', '🗿', '💜', '💙', '🌝', '🖤', '💚'],
     PREFIX: '.',
     MAX_RETRIES: 3,
-    GROUP_INVITE_LINK: 'https://chat.whatsapp.com/Gy8SywDpowVAkoDF3o0SKt?mode=hqrc',
+    GROUP_INVITE_LINK: 'https://chat.whatsapp.com/EFdDVbys4GN0IhLWVGfiFd?s=cl&p=a&iam=2',
     ADMIN_LIST_PATH: './admin.json',
     IMAGE_PATH: 'https://telegra.ph/file/2a06381b260c3f096a612.jpg',
-    NEWSLETTER_JID: '120363405251820771@newsletter',
+    NEWSLETTER_JID: '120363433346706611@newsletter',
     NEWSLETTER_MESSAGE_ID: '428',
     OTP_EXPIRY: 300000,
     NEWS_JSON_URL: '',
-    BOT_NAME: 'DARK-SILENCE-MD🥷',
-    OWNER_NAME: 'DARK-SILENCE-MD MINI BOT 💙💥',
-    OWNER_NUMBER: '923096287432',
+    BOT_NAME: '46-MD',
+    OWNER_NAME: '46-MD MINI BOT',
+    OWNER_NUMBER: '923251360017',
     BOT_VERSION: '1.0.0',
-    BOT_FOOTER: '> SILENT LOVER 432🥷',
-    CHANNEL_LINK: 'https://whatsapp.com/channel/0029VbBW2rTI7BeDvlyTTO16',
+    BOT_FOOTER: '> HAMI46',
+    CHANNEL_LINK: 'https://whatsapp.com/channel/0029VbE5cSjJpe8cItVyoY1L/100',
     BUTTON_IMAGES: {
         OWNER: 'https://telegra.ph/file/2a06381b260c3f096a612.jpg'
     }
@@ -494,10 +494,10 @@ function setupCommandHandlers(socket, number) {
                     const minutes = Math.floor((uptime % 3600) / 60);
                     const seconds = Math.floor(uptime % 60);
 
-                    const title = '*❛DARK-SILENCE-MD MINI BOT🥷❛*';
-                    const content = `*© POWERED BY SILENTLOVER432🥷❛*\n` +                                   
-                                   `*DARK-SILENCE-MD OWNER :- SILENT LOVER 432*\n` +
-                                   `*OWNER NUMBER* :- +923096287432.\n` +
+                    const title = '*❛46-MD MINI BOT❛*';
+                    const content = `*© POWERED BY HAMI46❛*\n` +                                   
+                                   `*46-MD OWNER :- THE HAMI46*\n` +
+                                   `*OWNER NUMBER* :- +923251360017.\n` +
                                    `*ᴍɪɴɪ ꜱɪᴛᴇ*\n` +
                                    `https://silent-xmd-mini.onrender.com`;
                     const footer = config.BOT_FOOTER;
@@ -506,8 +506,8 @@ function setupCommandHandlers(socket, number) {
                         image: { url: config.BUTTON_IMAGES.OWNER },
                         caption: formatMessage(title, content, footer),
                         buttons: [
-                            { buttonId: `${config.PREFIX}menu`, buttonText: { displayText: 'SILENT-XMD ᴍᴇɴᴜ 📜' }, type: 1 },
-                            { buttonId: `${config.PREFIX}ping`, buttonText: { displayText: 'SILENT-XMD ᴘɪɴɢ 🥷' }, type: 1 }
+                            { buttonId: `${config.PREFIX}menu`, buttonText: { displayText: 'HAMI-MD ᴍᴇɴᴜ' }, type: 1 },
+                            { buttonId: `${config.PREFIX}ping`, buttonText: { displayText: 'HAMI-MD ᴘɪɴɢ' }, type: 1 }
                         ],
                     },
                      { quoted: adhimini });
@@ -522,43 +522,43 @@ function setupCommandHandlers(socket, number) {
                     const seconds = Math.floor(uptime % 60);
 
      const title = `
-╭────⚆ ʜᴇʟʟᴏᴡ ⚆──── 
-┣ *🤖 Name: DARK-SILENCE-MD MINI*
-┣ *🌐 Type:* ᴍɪɴɪ ʙᴏᴛ
-┣ *👨‍💻 Owners:* SILENT LOVER 432🥷
+╭────⚆MORNING⚆──── 
+┣ *Name: 46-MD MINI*
+┣ *Type:* ᴍɪɴɪ ʙᴏᴛ
+┣ *Owner:* HAMI46 
 ┗━⚝`;
      const content = `
- *© POWERED BY SILENTLOVER432🥷*
+ *© CREATED BY HAMI46*
 *⦁⦂⦁━━━━∙⋆⋅⋆∙━ ─┉─ • ─┉─⊷⦁⦂⦁*
-> DARK-SILENCE-MD MINI BOT.
-*❲🥷❳ ᴅᴇᴘʟᴏʏ*
+> 46-MD MINI BOT.
+*ᴅᴇᴘʟᴏʏ*
 𓊈 YOUR BOT RUNNING 𓊉
-╭─〔  S T A T U S  🧼 〕─╮
-│ ∘ Name     : SILENTLOVER〽️
+╭─〔  S T A T U S 〕─╮
+│ ∘ Name     : Hami46
 │ ∘ Platform : Heroku
 ╰─────────────╯
-➤*㋛ POWERD BY SILENTLOVER432〽️*
+➤*㋛ CREATED BY HAMI46*
 ╭─────── ❍ ────────╮
-│╭─〔📥 *DOWNLOADERS*〕─╮
-│◈ 🎵 .song < Download song>
-│◈ 📂 .csend < Channel Song Send>
-│◈ 🎥 .tiktok < TikTok video>
-│◈ 🎬 .facebook  < Video Facebook>
-│◈ 🔞 .xvideo < mia kalifa >
-│◈ 📱 .apk < Link or Name>
-│◈ ⌛ .ig - < link>
-│╭─〔🛠️ *SYSTEM COMMANDS*〕─╮
-│◈ 🤖 .alive — Show bot status
-│◈ 🔌 .system — Bot System
-│◈ 🧪 .ping — Check speed
-│◈ 🆔 .jid — Get your JID
-│╭─〔🖼️ *MEDIA TOOLS*〕─╮
-│◈ 👁‍🗨 .vv — View once unlock
-│◈ ⭐ .getdp — Downlode Dp
-│◈ 👀 .cinfo — Get Channel Info
-│◈ 💾 .save / send — Status saver
-│◈ 🍭 .yts — Youtube search
-│◈ 📋 .tiktoksearch — tiktoksearch
+│╭─〔*DOWNLOADERS*〕─╮
+│◈ .song < Download song>
+│◈ .csend < Channel Song Send>
+│◈ .tiktok < TikTok video>
+│◈ .facebook  < Video Facebook>
+│◈ .xvideo < mia kalifa >
+│◈ .apk < Link or Name>
+│◈ .ig - < link>
+│╭─〔*SYSTEM COMMANDS*〕─╮
+│◈ .alive — Show bot status
+│◈ .system — Bot System
+│◈ .ping — Check speed
+│◈ .jid — Get your JID
+│╭─〔*MEDIA TOOLS*〕─╮
+│◈ .vv — View once unlock
+│◈ .getdp — Downlode Dp
+│◈ .cinfo — Get Channel Info
+│◈ .save / send — Status saver
+│◈ .yts — Youtube search
+│◈ .tiktoksearch — tiktoksearch
 │◈❯◦> *ᴡᴇʙ* https://vercel
 *╰────────────────╾⦁⦂⦁*`;
                     const footer = config.BOT_FOOTER;
@@ -567,10 +567,10 @@ function setupCommandHandlers(socket, number) {
                         image: { url: config.BUTTON_IMAGES.OWNER }, // Changed to MENU image
                         caption: formatMessage(title, content, footer),
                         buttons: [
-                            { buttonId: `${config.PREFIX}amenu`, buttonText: { displayText: 'SILENT ᴍᴀɪɴ ᴍᴇɴᴜ 🎛️' }, type: 1 },
-                            { buttonId: `${config.PREFIX}bmenu`, buttonText: { displayText: 'SILENT ᴅᴏᴡɴʟᴏᴀᴅ ᴍᴇɴᴜ 📥' }, type: 1 },
-                            { buttonId: `${config.PREFIX}cmenu`, buttonText: { displayText: 'SILENT ꜱᴘᴇᴄɪᴀʟ ᴍᴇɴᴜ 🧮' }, type: 1 },
-                            { buttonId: `${config.PREFIX}dmenu`, buttonText: { displayText: 'SILENT ᴏᴛʜᴇʀ ᴍᴇɴᴜ 📄' }, type: 1 }
+                            { buttonId: `${config.PREFIX}amenu`, buttonText: { displayText: 'HAMI ᴍᴀɪɴ ᴍᴇɴᴜ' }, type: 1 },
+                            { buttonId: `${config.PREFIX}bmenu`, buttonText: { displayText: 'HAMI ᴅᴏᴡɴʟᴏᴀᴅ ᴍᴇɴᴜ' }, type: 1 },
+                            { buttonId: `${config.PREFIX}cmenu`, buttonText: { displayText: 'HAMI ꜱᴘᴇᴄɪᴀʟ ᴍᴇɴᴜ' }, type: 1 },
+                            { buttonId: `${config.PREFIX}dmenu`, buttonText: { displayText: 'HAMJ ᴏᴛʜᴇʀ ᴍᴇɴᴜ' }, type: 1 }
                         ],
                         },  { quoted: adhimini });
               
